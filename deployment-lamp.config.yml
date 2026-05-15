@@ -145,7 +145,7 @@ deployment:
         - "composer install --no-dev --optimize-autoloader"
         - "sudo chmod -R 775 /var/www/html/data"
         - "sudo chown -R admin:www-data /var/www/html/data"
-        - "sudo apt-get install -y php-sqlite3
+        - "sudo apt-get install -y php-sqlite3"
     
     verification:
       enabled: true
