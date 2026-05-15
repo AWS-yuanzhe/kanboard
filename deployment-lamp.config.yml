@@ -143,6 +143,8 @@ deployment:
       # Custom commands run on the instance after file deployment
       post_install_commands:
         - "composer install --no-dev --optimize-autoloader"
+        - "chmod -R 775 /var/www/html/data"
+        - "chown -R admin:www-data /var/www/html/data"
     
     verification:
       enabled: true
